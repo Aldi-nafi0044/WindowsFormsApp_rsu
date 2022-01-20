@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/WcfServiceApp_rsu/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceApp_rsu" />
+  <xs:element name="insertdata_pasien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pasien" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nama_pasien" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tempat_lahir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tgl_lahir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agama" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="jns_kelamin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="no_telpon" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertdata_pasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertdata_pasienResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editdata_pasien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pasien" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nik" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nama_pasien" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tempat_lahir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tgl_lahir" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agama" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="jns_kelamin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="alamat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="no_telpon" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editdata_pasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editdata_pasienResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletedata_pasien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pasien" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletedata_pasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deletedata_pasienResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="caridata_pasien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id_pasien" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="caridata_pasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceApp_rsu" minOccurs="0" name="caridata_pasienResult" nillable="true" type="q1:ArrayOfview_data" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listdata_pasien">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listdata_pasienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceApp_rsu" minOccurs="0" name="listdata_pasienResult" nillable="true" type="q2:ArrayOfview_data" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
